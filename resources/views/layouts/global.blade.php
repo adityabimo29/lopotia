@@ -199,6 +199,12 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+              <a href="{{route("home")}}" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+              <p>Users</p>
+            </a>
+          </li>
           <li class="nav-header">SETTINGS</li>
           <li class="nav-item">
             <a href="https://adminlte.io/docs/3.0" class="nav-link">
@@ -228,12 +234,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
+            <h1 class="m-0 text-dark">@yield("breadcumb")</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">@yield("breadcumb")</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
